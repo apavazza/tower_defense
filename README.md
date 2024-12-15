@@ -1,7 +1,7 @@
 A tower defense game made in [Stencyl](https://stencyl.com/).
 
 # Play the game
-[CLICK TO PLAY](https://apavazza.github.io/tower_defense/)
+[CLICK TO PLAY](https://apavazza.github.io/tower_defense/play/)
 
 # Opening the game in Stencyl
 1. Open the directory where Stencyl keeps games. On Windows this is `%appdata%\Stencyl\stencylworks\games\`.
