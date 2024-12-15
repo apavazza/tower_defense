@@ -1,0 +1,17 @@
+#
+#Wed Dec 04 18:14:31 CET 2024
+alphabet=
+antialias=true
+chars=all
+color=\#ffffff
+family=Minecraftia.ttf
+gradient.color=\#c0c0c0
+gradient.offset=14
+shadow.blur=1
+shadow.color=\#000000
+shadow.x=1
+shadow.y=1
+size=38
+stroke.color=\#000000
+stroke.size=2
+style=bold

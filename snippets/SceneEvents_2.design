@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="3" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-font-new comment="false" x="0" y="0">
+                    <font eid="26" id="0"/>
+                </set-font-new>
+                <set-stroke-color comment="false" x="0" y="0">
+                    <color b="0" g="200" id="0" r="255"/>
+                </set-stroke-color>
+                <set-color comment="false" x="0" y="0">
+                    <color b="0" g="200" id="0" r="255"/>
+                </set-color>
+                <draw-text comment="false" x="0" y="0">
+                    <int id="0" val="Tower Defense"/>
+                    <int id="1" val="450"/>
+                    <int id="2" val="90"/>
+                </draw-text>
+                <draw-text comment="false" x="0" y="0">
+                    <int id="0" val="PLAY"/>
+                    <int id="1" val="600"/>
+                    <int id="2" val="245"/>
+                </draw-text>
+                <draw-text comment="false" x="0" y="0">
+                    <int id="0" val="HOW TO PLAY"/>
+                    <int id="1" val="480"/>
+                    <int id="2" val="370"/>
+                </draw-text>
+                <draw-text comment="false" x="0" y="0">
+                    <int id="0" val="CREDITS"/>
+                    <int id="1" val="550"/>
+                    <int id="2" val="500"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="4" id="0">
+        <event-mouse-enter-exit-region comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <scene-change-through comment="false" x="0" y="0">
+                    <scene eid="0" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </scene-change-through>
+            </group>
+            <REGION eid="0" id="0"/>
+            <int id="1" val="2"/>
+        </event-mouse-enter-exit-region>
+    </group>
+</groups>

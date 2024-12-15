@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="2" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="2" id="-1">
+                        <create-actor3 comment="false" x="0" y="0">
+                            <actortype eid="45" id="0"/>
+                            <int id="1" val="30"/>
+                            <int id="2" val="64"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-val-24-2 comment="false" x="0" y="0">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-val-24-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                        </set-val-24-2>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-24-2 comment="false" id="0" x="0" y="0"/>
+                        <get-game-val-10 comment="false" id="1" x="0" y="0"/>
+                    </less>
+                </if>
+            </group>
+            <int id="0" val="2"/>
+        </event-periodic>
+    </group>
+    <group eventID="4" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="4" id="-1">
+                        <create-actor3 comment="false" x="0" y="0">
+                            <actortype eid="43" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="574"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-val-24-3 comment="false" x="0" y="0">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-val-24-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                        </set-val-24-3>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-24-3 comment="false" id="0" x="0" y="0"/>
+                        <get-game-val-15 comment="false" id="1" x="0" y="0"/>
+                    </less>
+                </if>
+            </group>
+            <int id="0" val="3"/>
+        </event-periodic>
+    </group>
+    <group eventID="5" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-game-val-10 comment="false" x="0" y="0">
+                    <int id="0" val="10"/>
+                </set-game-val-10>
+                <set-game-val-15 comment="false" x="0" y="0">
+                    <int id="0" val="10"/>
+                </set-game-val-15>
+                <set-game-val-9 comment="false" x="0" y="0">
+                    <int id="0" val="0"/>
+                </set-game-val-9>
+            </group>
+        </init>
+    </group>
+    <group eventID="6" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <if comment="false" x="0" y="0">
+                    <group eventID="6" id="-1">
+                        <die comment="false" x="0" y="0">
+                            <ACTOR eid="5" id="0"/>
+                        </die>
+                        <dolater comment="false" x="0" y="0">
+                            <group eventID="6" id="-1">
+                                <scene-change-color comment="false" x="0" y="0">
+                                    <scene eid="6" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="1"/>
+                                    <color b="0" g="0" id="3" r="0"/>
+                                    <int id="4" val="0"/>
+                                    <int id="5" val="1"/>
+                                    <color b="0" g="0" id="6" r="0"/>
+                                </scene-change-color>
+                            </group>
+                            <int id="0" val="2"/>
+                        </dolater>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <custom-34 comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="5" id="0"/>
+                        </custom-34>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+                <else-if comment="false" x="0" y="0">
+                    <group eventID="6" id="-1">
+                        <create-actor3 comment="false" x="0" y="0">
+                            <actortype eid="57" id="0"/>
+                            <int id="1" val="512"/>
+                            <int id="2" val="150"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <dolater comment="false" x="0" y="0">
+                            <group eventID="6" id="-1">
+                                <scene-change-color comment="false" x="0" y="0">
+                                    <scene eid="6" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="1"/>
+                                    <color b="0" g="0" id="3" r="0"/>
+                                    <int id="4" val="0"/>
+                                    <int id="5" val="1"/>
+                                    <color b="0" g="0" id="6" r="0"/>
+                                </scene-change-color>
+                            </group>
+                            <int id="0" val="2"/>
+                        </dolater>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-9 comment="false" id="0" x="0" y="0"/>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <get-game-val-10 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-15 comment="false" id="1" x="0" y="0"/>
+                        </plus>
+                    </eq>
+                </else-if>
+            </group>
+        </step>
+    </group>
+</groups>

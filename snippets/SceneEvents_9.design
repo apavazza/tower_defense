@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="4" id="0">
+        <event-mouse-enter-exit-region comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <scene-change-through comment="false" x="0" y="0">
+                    <scene eid="1" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0"/>
+                </scene-change-through>
+            </group>
+            <REGION eid="0" id="0"/>
+            <int id="1" val="2"/>
+        </event-mouse-enter-exit-region>
+    </group>
+    <group eventID="5" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <create-actor3 comment="false" x="0" y="0">
+                    <actortype eid="61" id="0"/>
+                    <int id="1" val="480"/>
+                    <int id="2" val="288"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+            </group>
+        </init>
+    </group>
+    <group eventID="6" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <set-font-new comment="false" x="0" y="0">
+                    <font eid="26" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="0" y="0">
+                    <int id="0" val="How to Play"/>
+                    <int id="1" val="460"/>
+                    <int id="2" val="90"/>
+                </draw-text>
+                <draw-text comment="false" x="0" y="0">
+                    <int id="0" val="Back"/>
+                    <int id="1" val="300"/>
+                    <int id="2" val="190"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+</groups>

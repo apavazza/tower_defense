@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups format="1">
+    <group eventID="5" id="0">
+        <init comment="false" x="30" y="33">
+            <group eventID="5" id="-1">
+                <kill-leave-screen comment="false" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                </kill-leave-screen>
+            </group>
+        </init>
+    </group>
+    <group eventID="6" id="0">
+        <event-delay comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <die comment="false" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
+            <int id="0" val="0.2"/>
+        </event-delay>
+    </group>
+    <group eventID="7" id="0">
+        <event-collide-actortogroup comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <die comment="false" x="0" y="0">
+                    <first-actor comment="false" id="0" x="0" y="0"/>
+                </die>
+                <custom-31 comment="false" x="0" y="0">
+                    <collide-member-of-group comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="1"/>
+                </custom-31>
+                <custom-22 comment="false" x="0" y="0">
+                    <int id="0" val="1"/>
+                </custom-22>
+                <if comment="false" x="0" y="0">
+                    <group eventID="7" id="-1">
+                        <die comment="false" x="0" y="0">
+                            <collide-member-of-group comment="false" id="0" x="0" y="0"/>
+                        </die>
+                        <custom-22 comment="false" x="0" y="0">
+                            <int id="0" val="2"/>
+                        </custom-22>
+                        <set-game-val-9 comment="false" x="0" y="0">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-game-val-9 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                        </set-game-val-9>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <custom-34 comment="false" id="0" x="0" y="0">
+                            <collide-member-of-group comment="false" id="0" x="0" y="0"/>
+                        </custom-34>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <actorgroup eid="3" id="1"/>
+        </event-collide-actortogroup>
+    </group>
+</groups>

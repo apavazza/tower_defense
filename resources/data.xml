@@ -1,0 +1,2533 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <custom-block
+        blocktag="custom-12"
+        blocktype="ACTION"
+        code=".say(&quot;Follow Path&quot;, &quot;_customBlock_AddNode&quot;, [, ]);"
+        desc=""
+        global="false"
+        gui="add node ( x: %1 y: %2 ) to path for %0"
+        id="12"
+        message="AddNode"
+        name="AddNode"
+        oid="-1"
+        return="void"
+        shared="false"
+        snippetID="5">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="x" order="1" type="number"/>
+        <blank name="y" order="2" type="number"/>
+    </custom-block>
+    <custom-block
+        blocktag="custom-13"
+        blocktype="ACTION"
+        code=".say(&quot;Follow Path&quot;, &quot;_customBlock_AddNodeWithCustomSpeed&quot;, [, , ]);"
+        desc=""
+        global="false"
+        gui="add node ( x: %1 y: %2 ) with speed %3 to path for %0"
+        id="13"
+        message="AddNodeWithCustomSpeed"
+        name="AddNodeWithCustomSpeed"
+        oid="-1"
+        return="void"
+        shared="false"
+        snippetID="5">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="x" order="1" type="number"/>
+        <blank name="y" order="2" type="number"/>
+        <blank name="speed" order="3" type="number"/>
+    </custom-block>
+    <font
+        alphabet=" !&quot;#$%&amp;&apos;()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#127;&#128;&#129;&#130;&#131;&#132;&#134;&#135;&#136;&#137;&#138;&#139;&#140;&#141;&#142;&#143;&#144;&#145;&#146;&#147;&#148;&#149;&#150;&#151;&#152;&#153;&#154;&#155;&#156;&#157;&#158;&#159; ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ"
+        atlasID="0"
+        desc=""
+        height="15"
+        id="39"
+        name="Arcade White"
+        offsets="0|0|0|,12|0|12,20|0|20,28|0|28,36|0|36,47|0|47,57|0|57,68|0|68,72|0|72,78|0|78,84|0|84,95|0|95,105|0|105,109|0|109,117|0|117,121|0|121,132|0|132,143|0|143,153|0|153,164|0|164,175|0|175,186|0|186,197|0|197,208|0|208,219|0|219,230|0|230,241|0|241,245|0|245,249|0|249,257|0|257,268|0|268,276|0|276,287|0|287,298|0|298,309|0|309,320|0|320,331|0|331,342|0|342,353|0|353,364|0|364,375|0|375,386|0|386,396|0|396,407|0|407,418|0|418,429|0|429,440|0|440,451|0|451,462|0|462,473|0|473,484|0|484,495|0|495,506|0|506,516|0|516,527|0|527,538|0|538,549|0|549,560|0|560,570|0|570,581|0|581,588|0|588,599|0|599,606|0|606,614|0|614,625|0|625,632|0|632,643|0|643,654|0|654,665|0|665,676|0|676,687|0|687,698|0|698,709|0|709,720|0|720,730|0|730,741|0|741,752|0|752,763|0|763,774|0|774,785|0|785,796|0|796,807|0|807,818|0|818,829|0|829,840|0|840,850|0|850,861|0|861,872|0|872,883|0|883,894|0|894,904|0|904,915|0|915,921|0|921,941|0|941,947|0|947,957|0|957,958|0|958,959|0|959,960|0|960,961|0|961,962|0|962,963|0|963,964|0|964,965|0|965,966|0|966,967|0|967,968|0|968,969|0|969,970|0|970,971|0|971,972|0|972,973|0|973,974|0|974,975|0|975,976|0|976,977|0|977,978|0|978,979|0|979,980|0|980,981|0|981,982|0|982,983|0|983,984|0|984,985|0|985,986|0|986,987|0|987,988|0|988,989|0|989,990|0|990,991|0|991,999|0|999,1011|0|1011,1012|0|1012,1013|0|1013,1024|0|1024,1026|0|1026,1027|0|1027,1032|0|1032,1044|0|1044,1045|0|1045,1053|0|1053,1062|0|1062,1063|0|1063,1075|0|1075,1076|0|1076,1077|0|1077,1078|0|1078,1079|0|1079,1080|0|1080,1087|0|1087,1088|0|1088,1089|0|1089,1090|0|1090,1094|0|1094,1095|0|1095,1101|0|1101,1109|0|1109,1110|0|1110,1111|0|1111,1112|0|1112,1123|0|1123,1134|0|1134,1145|0|1145,1156|0|1156,1167|0|1167,1178|0|1178,1189|0|1189,1207|0|1207,1218|0|1218,1229|0|1229,1240|0|1240,1251|0|1251,1262|0|1262,1272|0|1272,1282|0|1282,1292|0|1292,1302|0|1302,1314|0|1314,1325|0|1325,1336|0|1336,1347|0|1347,1358|0|1358,1369|0|1369,1380|0|1380,1381|0|1381,1392|0|1392,1403|0|1403,1414|0|1414,1425|0|1425,1436|0|1436,1446|0|1446,1447|0|1447,1469|0|1469,1480|0|1480,1491|0|1491,1502|0|1502,1513|0|1513,1524|0|1524,1535|0|1535,1553|0|1553,1564|0|1564,1575|0|1575,1586|0|1586,1597|0|1597,1608|0|1608,1618|0|1618,1628|0|1628,1638|0|1638,1648|0|1648,1660|0|1660,1671|0|1671,1682|0|1682,1693|0|1693,1704|0|1704,1715|0|1715,1726|0|1726,1727|0|1727,1738|0|1738,1749|0|1749,1760|0|1760,1771|0|1771,1782|0|1782,1792|0|1792,1793|0|1793,1803|0|1803,1804|0|1804,1805|0|1805,1806|0|1806,1807|0|1807,1808|0|1808,1809|0|1809,1810|0|1810,1811|0|1811,1812|0|1812,1813|0|1813,1814|0|1814,1815|0|1815,1816|0|1816,1817|0|1817,1818|0|1818,1819|0|1819,1820|0|1820,1821|0|1821,1822|0|1822,1823|0|1823,1824|0|1824,1825|0|1825,1826|0|1826,1827|0|1827,1828|0|1828,1829|0|1829,1830|0|1830,1831|0|1831,1832|0|1832,1833|0|1833,1834|0|1834,1835|0|1835,1836|0|1836,1837|0|1837,1838|0|1838,1839|0|1839,1840|0|1840,1841|0|1841,1842|0|1842,1843|0|1843,1844|0|1844,1845|0|1845,1846|0|1846,1847|0|1847,1848|0|1848,1849|0|1849,1850|0|1850,1851|0|1851,1852|0|1852,1862|0|1862,1863|0|1863,1864|0|1864,1865|0|1865,1866|0|1866,1867|0|1867,1868|0|1868,1869|0|1869,1870|0|1870,1871|0|1871,1872|0|1872,1873|0|1873,1874|0|1874,1875|0|1875,1876|0|1876,1877|0|1877,1878|0|1878,1879|0|1879,1880|0|1880,1881|0|1881,1882|0|1882,1883|0|1883,1884|0|1884,1885|0|1885,1886|0|1886,1887|0|1887,1888|0|1888,1889|0|1889,1890|0|1890,1891|0|1891,1892|0|1892,1893|0|1893,1894|0|1894,1912|0|1912,1930|0|1930,1931|0|1931,1932|0|1932,1933|0|1933,1934|0|1934,1935|0|1935,1936|0|1936,1937|0|1937,1938|0|1938,1939|0|1939,1940|0|1940,1941|0|1941,1942|0|1942,1953|0|1953,1964|0|1964,1965|0|1965,1966|0|1966,1967|0|1967,1968|0|1968,1969|0|1969,1970|0|1970,1971|0|1971,1972|0|1972,1973|0|1973,1974|0|1974,1975|0|1975,1976|0|1976,1977|0|1977,1978|0|1978,1979|0|1979,1980|0|1980,1981|0|1981,1982|0|1982,1983|0|1983,1984|0|1984,1985|0|1985,1986|0|1986"
+        oid="-1"
+        prerendered="false"
+        readable="false"
+        rowHeight="15"
+        shared="false"/>
+    <actor
+        adamp="0.0"
+        ascale="false"
+        atlasID="0"
+        bodytype="2"
+        continuous="true"
+        desc="It&apos;s a glowing red bullet."
+        eventsnippetid="8"
+        fixedrot="true"
+        fric="0.2"
+        gid="4"
+        id="15"
+        ignoreg="true"
+        inertia="0.01"
+        ldamp="0.0"
+        mass="0.1"
+        name="Bullet"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="16"
+        static="false">
+        <snippets/>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="0"
+        defaultAnimation="0"
+        desc=""
+        id="16"
+        name="Bullet"
+        readable="false"
+        shared="false">
+        <anim
+            across="3"
+            down="1"
+            durations="100,100,100"
+            height="32"
+            id="0"
+            loop="true"
+            name="Animation 0"
+            numframes="3"
+            originx="16"
+            originy="16"
+            sync="false"
+            version="1"
+            width="96">
+            <circle
+                data="6,10,10"
+                density="0.1"
+                fric="0.2"
+                gid="-1000"
+                id="0"
+                name="Circle"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <actor
+        adamp="0.0"
+        ascale="true"
+        atlasID="0"
+        bodytype="0"
+        continuous="false"
+        desc=""
+        eventsnippetid="3"
+        fixedrot="true"
+        fric="0.2"
+        gid="5"
+        id="7"
+        ignoreg="true"
+        inertia="1.0"
+        ldamp="0.0"
+        mass="1.0"
+        name="castle"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="8"
+        static="true">
+        <snippets>
+            <s enabled="true" id="14">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="10.0"/>
+                <prop id="2" list="0" val="10.0"/>
+                <prop id="3" list="0" val="3.0"/>
+                <prop id="4" list="0" val="Healed"/>
+                <prop id="5" list="0" val="Damaged"/>
+                <prop id="7" list="0" val="Nothing"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0.0"/>
+                <prop id="10" list="0" val="true"/>
+                <prop id="11" list="0" val="false"/>
+                <prop id="12" list="0" val=""/>
+                <prop id="13" list="0" val=""/>
+                <prop id="14" list="0" val=""/>
+                <prop id="15" list="0" val=""/>
+                <prop id="16" list="0" val=""/>
+                <prop id="17" list="0" val="false"/>
+                <prop id="18" list="0" val="0.0"/>
+                <prop id="19" list="0" val="0.0"/>
+                <prop id="20" list="0" val=""/>
+                <prop id="22" list="0" val="0.0"/>
+                <prop id="23" list="0" val="false"/>
+                <prop id="24" list="0" val="-1"/>
+                <prop id="25" list="0" val="0.0"/>
+                <prop id="26" list="0" val="Actor"/>
+                <prop id="27" list="0" val="0.0"/>
+                <prop id="28" list="0" val="1.0"/>
+                <prop id="29" list="0" val="-15.0"/>
+                <prop id="30" list="0" val="160.0"/>
+                <prop id="31" list="0" val="10.0"/>
+                <prop id="32" list="0" val="Horizontal"/>
+                <prop id="39" list="0" val="0,0,0,255"/>
+                <prop id="41" list="0" val="0,255,0,255"/>
+                <prop id="42" list="0" val="255,255,0,255"/>
+                <prop id="43" list="0" val="255,153,0,255"/>
+                <prop id="44" list="0" val="255,0,0,255"/>
+                <prop id="45" list="0" val="0,0,0,255"/>
+                <prop id="46" list="0" val="true"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="1"
+        defaultAnimation="1"
+        desc=""
+        id="8"
+        name="castle"
+        readable="false"
+        shared="false">
+        <anim
+            across="1"
+            down="1"
+            durations="100"
+            height="135"
+            id="1"
+            loop="true"
+            name="Animation 0"
+            numframes="1"
+            originx="80"
+            originy="67"
+            sync="false"
+            version="2"
+            width="160">
+            <poly
+                data="4,0,135,160,135,160,0,0,0"
+                density="0.1"
+                fric="0.2"
+                gid="-1000"
+                id="0"
+                name="Animation 1"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <custom-block
+        blocktag="custom-14"
+        blocktype="ACTION"
+        code=".say(&quot;Follow Path&quot;, &quot;_customBlock_ClearPath&quot;);"
+        desc=""
+        global="false"
+        gui="clear path for %0"
+        id="14"
+        message="ClearPath"
+        name="ClearPath"
+        oid="-1"
+        return="void"
+        shared="false"
+        snippetID="5">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <actor
+        adamp="0.0"
+        ascale="true"
+        atlasID="0"
+        bodytype="2"
+        continuous="true"
+        desc=""
+        eventsnippetid="37"
+        fixedrot="false"
+        fric="0.2"
+        gid="2"
+        id="59"
+        ignoreg="false"
+        inertia="1.0"
+        ldamp="0.0"
+        mass="1.0"
+        name="credits_actor"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="60"
+        static="false">
+        <snippets/>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="4"
+        defaultAnimation="4"
+        desc=""
+        id="60"
+        name="credits_actor"
+        readable="false"
+        shared="false">
+        <anim
+            across="1"
+            down="1"
+            durations="100"
+            height="352"
+            id="4"
+            loop="true"
+            name="Animation 0"
+            numframes="1"
+            originx="287"
+            originy="176"
+            sync="false"
+            version="2"
+            width="574">
+            <poly
+                data="4,0,0,576,0,576,352,0,352"
+                density="0.1"
+                fric="0.2"
+                gid="-1000"
+                id="0"
+                name="Animation 4"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <custom-block
+        blocktag="custom-31"
+        blocktype="ACTION"
+        code=".say(&quot;Health Manager&quot;, &quot;_customBlock_Damage&quot;, []);"
+        desc="Subtracts a specific amount of health from the Actor."
+        global="false"
+        gui="Damage %0 By %1"
+        id="31"
+        message="Damage"
+        name="Damage"
+        oid="-1"
+        return="void"
+        shared="false"
+        snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="Amount" order="1" type="number"/>
+    </custom-block>
+    <custom-block
+        blocktag="custom-23"
+        blocktype="ACTION"
+        code="sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_DecrementScore&quot;, []);"
+        desc=""
+        global="false"
+        gui="Decrement Score By %0"
+        id="23"
+        message="DecrementScore"
+        name="DecrementScore"
+        oid="-1"
+        return="void"
+        shared="false"
+        snippetID="9">
+        <blank name="Amount" order="0" type="number"/>
+    </custom-block>
+    <actor
+        adamp="0.0"
+        ascale="false"
+        atlasID="0"
+        bodytype="2"
+        continuous="false"
+        desc=""
+        eventsnippetid="30"
+        fixedrot="true"
+        fric="0.2"
+        gid="2"
+        id="47"
+        ignoreg="true"
+        inertia="0.01"
+        ldamp="0.0"
+        mass="0.1"
+        name="Explosion"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="48"
+        static="false">
+        <snippets/>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="0"
+        defaultAnimation="0"
+        desc=""
+        id="48"
+        name="Explosion"
+        readable="false"
+        shared="false">
+        <anim
+            across="7"
+            down="1"
+            durations="100,100,100,100,100,100,100"
+            height="64"
+            id="0"
+            loop="true"
+            name="Boom2"
+            numframes="7"
+            originx="32"
+            originy="32"
+            sync="false"
+            version="1"
+            width="448">
+            <poly
+                data="4,0,64,64,64,64,0,0,0"
+                density="0.1"
+                fric="0.2"
+                gid="6"
+                id="0"
+                name="Animation 0"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <custom-block
+        blocktag="custom-29"
+        blocktype="ACTION"
+        code=".say(&quot;Health Manager&quot;, &quot;_customBlock_FullRestore&quot;);"
+        desc=""
+        global="false"
+        gui="Restore %0 To Full Health"
+        id="29"
+        message="FullRestore"
+        name="FullRestore"
+        oid="-1"
+        return="void"
+        shared="false"
+        snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <actor
+        adamp="0.0"
+        ascale="true"
+        atlasID="0"
+        bodytype="2"
+        continuous="false"
+        desc=""
+        eventsnippetid="19"
+        fixedrot="false"
+        fric="0.2"
+        gid="2"
+        id="37"
+        ignoreg="false"
+        inertia="1.0"
+        ldamp="0.0"
+        mass="1.0"
+        name="gauntlet"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="38"
+        static="false">
+        <snippets/>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="0"
+        defaultAnimation="0"
+        desc=""
+        id="38"
+        name="gauntlet"
+        readable="false"
+        shared="false">
+        <anim
+            across="1"
+            down="1"
+            durations="100"
+            height="32"
+            id="0"
+            loop="true"
+            name="Animation 0"
+            numframes="1"
+            originx="14"
+            originy="16"
+            sync="false"
+            version="2"
+            width="28">
+            <poly
+                data="4,0,32,28,32,28,0,0,0"
+                density="0.1"
+                fric="0.2"
+                gid="-1000"
+                id="0"
+                name="Animation 0"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <custom-block
+        blocktag="custom-34"
+        blocktype="NORMAL"
+        code="(.say(&quot;Health Manager&quot;, &quot;_customBlock_GetCurrentHealth&quot;) : Float)"
+        desc=""
+        global="false"
+        gui="Current Health for %0"
+        id="34"
+        message="GetCurrentHealth"
+        name="GetCurrentHealth"
+        oid="-1"
+        return="number"
+        shared="false"
+        snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block
+        blocktag="custom-25"
+        blocktype="NORMAL"
+        code="(sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_GetFont&quot;) : Font)"
+        desc="Get the font used. Use for if you are setting up labels to retain consistency across Flash and other platforms."
+        global="false"
+        gui="Get Font"
+        id="25"
+        message="GetFont"
+        name="GetFont"
+        oid="-1"
+        return="font"
+        shared="false"
+        snippetID="9"/>
+    <custom-block
+        blocktag="custom-32"
+        blocktype="NORMAL"
+        code="(.say(&quot;Health Manager&quot;, &quot;_customBlock_GetInvincibility&quot;) : Bool)"
+        desc=""
+        global="false"
+        gui="%0 Is Invincible?"
+        id="32"
+        message="GetInvincibility"
+        name="GetInvincibility"
+        oid="-1"
+        return="boolean"
+        shared="false"
+        snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block
+        blocktag="custom-33"
+        blocktype="NORMAL"
+        code="(.say(&quot;Health Manager&quot;, &quot;_customBlock_GetMaxHealth&quot;) : Float)"
+        desc=""
+        global="false"
+        gui="Maximum Health For %0"
+        id="33"
+        message="GetMaxHealth"
+        name="GetMaxHealth"
+        oid="-1"
+        return="number"
+        shared="false"
+        snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block
+        blocktag="custom-17"
+        blocktype="NORMAL"
+        code="(sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_GetScore&quot;) : Float)"
+        desc=""
+        global="false"
+        gui="Get Current Score"
+        id="17"
+        message="GetScore"
+        name="GetScore"
+        oid="-1"
+        return="number"
+        shared="false"
+        snippetID="9"/>
+    <custom-block
+        blocktag="custom-20"
+        blocktype="NORMAL"
+        code="(sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_GetXOffset&quot;) : Float)"
+        desc=""
+        global="false"
+        gui="Get Score Drawing X Offset"
+        id="20"
+        message="GetXOffset"
+        name="GetXOffset"
+        oid="-1"
+        return="number"
+        shared="false"
+        snippetID="9"/>
+    <custom-block
+        blocktag="custom-21"
+        blocktype="NORMAL"
+        code="(sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_GetYOffset&quot;) : Float)"
+        desc=""
+        global="false"
+        gui="Get Score Drawing Y Offset"
+        id="21"
+        message="GetYOffset"
+        name="GetYOffset"
+        oid="-1"
+        return="number"
+        shared="false"
+        snippetID="9"/>
+    <actor
+        adamp="0.0"
+        ascale="true"
+        atlasID="0"
+        bodytype="2"
+        continuous="false"
+        desc=""
+        eventsnippetid="25"
+        fixedrot="true"
+        fric="0.2"
+        gid="3"
+        id="43"
+        ignoreg="true"
+        inertia="1.0"
+        ldamp="0.0"
+        mass="1.0"
+        name="giant_level2"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="44"
+        static="false">
+        <snippets>
+            <s enabled="true" id="5">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="1" val="">
+                    <text order="0" value="352,576"/>
+                    <text order="1" value="352,464"/>
+                    <text order="2" value="512,464"/>
+                    <text order="3" value="512,320"/>
+                    <text order="4" value="800,320"/>
+                    <text order="5" value="800,355"/>
+                    <text order="6" value="1330,355"/>
+                </prop>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="1" val=""/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="0.0"/>
+                <prop id="7" list="0" val="false"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0.0"/>
+                <prop id="10" list="0" val="0.0"/>
+                <prop id="12" list="0" val="0.0"/>
+                <prop id="13" list="0" val="0.0"/>
+                <prop id="14" list="0" val="0.0"/>
+                <prop id="15" list="0" val="0.0"/>
+                <prop id="17" list="0" val="5.0"/>
+                <prop id="18" list="0" val="0.0"/>
+                <prop id="19" list="0" val="0.0"/>
+                <prop id="23" list="0" val="false"/>
+            </s>
+            <s enabled="true" id="14">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="10.0"/>
+                <prop id="2" list="0" val="10.0"/>
+                <prop id="3" list="0" val="3.0"/>
+                <prop id="4" list="0" val="Healed"/>
+                <prop id="5" list="0" val="Damaged"/>
+                <prop id="7" list="0" val="Nothing"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0.5"/>
+                <prop id="10" list="0" val="true"/>
+                <prop id="11" list="0" val="false"/>
+                <prop id="12" list="0" val=""/>
+                <prop id="13" list="0" val=""/>
+                <prop id="14" list="0" val=""/>
+                <prop id="15" list="0" val=""/>
+                <prop id="16" list="0" val=""/>
+                <prop id="17" list="0" val="false"/>
+                <prop id="18" list="0" val="0.0"/>
+                <prop id="19" list="0" val="0.0"/>
+                <prop id="20" list="0" val=""/>
+                <prop id="22" list="0" val="0.0"/>
+                <prop id="23" list="0" val="false"/>
+                <prop id="24" list="0" val="-1"/>
+                <prop id="25" list="0" val="0.0"/>
+                <prop id="26" list="0" val="Actor"/>
+                <prop id="27" list="0" val="0.0"/>
+                <prop id="28" list="0" val="1.0"/>
+                <prop id="29" list="0" val="0.0"/>
+                <prop id="30" list="0" val="70.0"/>
+                <prop id="31" list="0" val="5.0"/>
+                <prop id="32" list="0" val="Horizontal"/>
+                <prop id="39" list="0" val="0,0,0,255"/>
+                <prop id="41" list="0" val="0,255,0,255"/>
+                <prop id="42" list="0" val="255,255,0,255"/>
+                <prop id="43" list="0" val="255,153,0,255"/>
+                <prop id="44" list="0" val="255,0,0,255"/>
+                <prop id="45" list="0" val="0,0,0,255"/>
+                <prop id="46" list="0" val="true"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="1"
+        defaultAnimation="1"
+        desc=""
+        id="44"
+        name="giant_level2"
+        readable="false"
+        shared="false">
+        <anim
+            across="3"
+            down="3"
+            durations="100,100,100,100,100,100,100"
+            height="192"
+            id="1"
+            loop="true"
+            name="Animation 0"
+            numframes="7"
+            originx="32"
+            originy="32"
+            sync="false"
+            version="2"
+            width="192">
+            <poly
+                data="4,10,60,55,60,55,0,10,0"
+                density="0.1"
+                fric="0.2"
+                gid="-1000"
+                id="0"
+                name="Animation 1"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <actor
+        adamp="0.0"
+        ascale="true"
+        atlasID="0"
+        bodytype="2"
+        continuous="false"
+        desc=""
+        eventsnippetid="31"
+        fixedrot="true"
+        fric="0.2"
+        gid="3"
+        id="49"
+        ignoreg="true"
+        inertia="1.0"
+        ldamp="0.0"
+        mass="1.0"
+        name="giant_level3"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="50"
+        static="false">
+        <snippets>
+            <s enabled="true" id="5">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="1" val="">
+                    <text order="0" value="1330,340"/>
+                </prop>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="1" val=""/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="0.0"/>
+                <prop id="7" list="0" val="false"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0.0"/>
+                <prop id="10" list="0" val="0.0"/>
+                <prop id="12" list="0" val="0.0"/>
+                <prop id="13" list="0" val="0.0"/>
+                <prop id="14" list="0" val="0.0"/>
+                <prop id="15" list="0" val="0.0"/>
+                <prop id="17" list="0" val="5.0"/>
+                <prop id="18" list="0" val="0.0"/>
+                <prop id="19" list="0" val="0.0"/>
+                <prop id="23" list="0" val="false"/>
+            </s>
+            <s enabled="true" id="14">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="10.0"/>
+                <prop id="2" list="0" val="10.0"/>
+                <prop id="3" list="0" val="3.0"/>
+                <prop id="4" list="0" val="Healed"/>
+                <prop id="5" list="0" val="Damaged"/>
+                <prop id="7" list="0" val="Nothing"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0.5"/>
+                <prop id="10" list="0" val="true"/>
+                <prop id="11" list="0" val="false"/>
+                <prop id="12" list="0" val=""/>
+                <prop id="13" list="0" val=""/>
+                <prop id="14" list="0" val=""/>
+                <prop id="15" list="0" val=""/>
+                <prop id="16" list="0" val=""/>
+                <prop id="17" list="0" val="false"/>
+                <prop id="18" list="0" val="0.0"/>
+                <prop id="19" list="0" val="0.0"/>
+                <prop id="20" list="0" val=""/>
+                <prop id="22" list="0" val="0.0"/>
+                <prop id="23" list="0" val="false"/>
+                <prop id="24" list="0" val="-1"/>
+                <prop id="25" list="0" val="0.0"/>
+                <prop id="26" list="0" val="Actor"/>
+                <prop id="27" list="0" val="0.0"/>
+                <prop id="28" list="0" val="1.0"/>
+                <prop id="29" list="0" val="0.0"/>
+                <prop id="30" list="0" val="70.0"/>
+                <prop id="31" list="0" val="5.0"/>
+                <prop id="32" list="0" val="Horizontal"/>
+                <prop id="39" list="0" val="0,0,0,255"/>
+                <prop id="41" list="0" val="0,255,0,255"/>
+                <prop id="42" list="0" val="255,255,0,255"/>
+                <prop id="43" list="0" val="255,153,0,255"/>
+                <prop id="44" list="0" val="255,0,0,255"/>
+                <prop id="45" list="0" val="0,0,0,255"/>
+                <prop id="46" list="0" val="true"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="1"
+        defaultAnimation="1"
+        desc=""
+        id="50"
+        name="giant_level3"
+        readable="false"
+        shared="false">
+        <anim
+            across="3"
+            down="3"
+            durations="100,100,100,100,100,100,100"
+            height="192"
+            id="1"
+            loop="true"
+            name="Animation 0"
+            numframes="7"
+            originx="32"
+            originy="32"
+            sync="false"
+            version="2"
+            width="192">
+            <poly
+                data="4,10,60,55,60,55,0,10,0"
+                density="0.1"
+                fric="0.2"
+                gid="-1000"
+                id="0"
+                name="Animation 1"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <actor
+        adamp="0.0"
+        ascale="true"
+        atlasID="0"
+        bodytype="2"
+        continuous="false"
+        desc=""
+        eventsnippetid="1"
+        fixedrot="true"
+        fric="0.2"
+        gid="3"
+        id="3"
+        ignoreg="true"
+        inertia="1.0"
+        ldamp="0.0"
+        mass="1.0"
+        name="goblin_level1"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="4"
+        static="false">
+        <snippets>
+            <s enabled="true" id="5">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="1" val="">
+                    <text order="0" value="96,64"/>
+                    <text order="1" value="96,575"/>
+                    <text order="2" value="670,575"/>
+                    <text order="3" value="670,480"/>
+                    <text order="4" value="285,480"/>
+                    <text order="5" value="285,95"/>
+                    <text order="6" value="670,95"/>
+                    <text order="7" value="670,360"/>
+                    <text order="8" value="1130,360"/>
+                </prop>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="1" val=""/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="0.0"/>
+                <prop id="7" list="0" val="false"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0.0"/>
+                <prop id="10" list="0" val="0.0"/>
+                <prop id="12" list="0" val="0.0"/>
+                <prop id="13" list="0" val="0.0"/>
+                <prop id="14" list="0" val="0.0"/>
+                <prop id="15" list="0" val="0.0"/>
+                <prop id="17" list="0" val="10.0"/>
+                <prop id="18" list="0" val="0.0"/>
+                <prop id="19" list="0" val="0.0"/>
+                <prop id="23" list="0" val="false"/>
+            </s>
+            <s enabled="true" id="14">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="5.0"/>
+                <prop id="2" list="0" val="5.0"/>
+                <prop id="3" list="0" val="3.0"/>
+                <prop id="4" list="0" val="Healed"/>
+                <prop id="5" list="0" val="Damaged"/>
+                <prop id="7" list="0" val="Nothing"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0.5"/>
+                <prop id="10" list="0" val="true"/>
+                <prop id="11" list="0" val="false"/>
+                <prop id="12" list="0" val=""/>
+                <prop id="13" list="0" val=""/>
+                <prop id="14" list="0" val=""/>
+                <prop id="15" list="0" val=""/>
+                <prop id="16" list="0" val=""/>
+                <prop id="17" list="0" val="false"/>
+                <prop id="18" list="0" val="0.0"/>
+                <prop id="19" list="0" val="0.0"/>
+                <prop id="20" list="0" val=""/>
+                <prop id="22" list="0" val="0.0"/>
+                <prop id="23" list="0" val="false"/>
+                <prop id="24" list="0" val="-1"/>
+                <prop id="25" list="0" val="0.0"/>
+                <prop id="26" list="0" val="Actor"/>
+                <prop id="27" list="0" val="0.0"/>
+                <prop id="28" list="0" val="1.0"/>
+                <prop id="29" list="0" val="0.0"/>
+                <prop id="30" list="0" val="70.0"/>
+                <prop id="31" list="0" val="5.0"/>
+                <prop id="32" list="0" val="Horizontal"/>
+                <prop id="39" list="0" val="0,0,0,255"/>
+                <prop id="41" list="0" val="0,255,0,255"/>
+                <prop id="42" list="0" val="255,255,0,255"/>
+                <prop id="43" list="0" val="255,153,0,255"/>
+                <prop id="44" list="0" val="255,0,0,255"/>
+                <prop id="45" list="0" val="0,0,0,255"/>
+                <prop id="46" list="0" val="true"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="0"
+        defaultAnimation="0"
+        desc=""
+        id="4"
+        name="goblin_level1"
+        readable="false"
+        shared="false">
+        <anim
+            across="4"
+            down="3"
+            durations="100,100,100,100,100,100,100,100,100,100,100"
+            height="192"
+            id="0"
+            loop="true"
+            name="Animation 0"
+            numframes="11"
+            originx="32"
+            originy="32"
+            sync="false"
+            version="2"
+            width="256">
+            <poly
+                data="4,18,55,48,55,48,0,18,0"
+                density="0.1"
+                fric="0.2"
+                gid="3"
+                id="0"
+                name="Animation 0"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <actor
+        adamp="0.0"
+        ascale="true"
+        atlasID="0"
+        bodytype="2"
+        continuous="false"
+        desc=""
+        eventsnippetid="26"
+        fixedrot="true"
+        fric="0.2"
+        gid="3"
+        id="45"
+        ignoreg="true"
+        inertia="1.0"
+        ldamp="0.0"
+        mass="1.0"
+        name="goblin_level2"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="46"
+        static="false">
+        <snippets>
+            <s enabled="true" id="5">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="1" val="">
+                    <text order="0" value="96,64"/>
+                    <text order="1" value="96,224"/>
+                    <text order="2" value="512,224"/>
+                    <text order="3" value="512,512"/>
+                    <text order="4" value="800,512"/>
+                    <text order="5" value="800,360"/>
+                    <text order="6" value="1330,360"/>
+                </prop>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="1" val=""/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="0.0"/>
+                <prop id="7" list="0" val="false"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0.0"/>
+                <prop id="10" list="0" val="0.0"/>
+                <prop id="12" list="0" val="0.0"/>
+                <prop id="13" list="0" val="0.0"/>
+                <prop id="14" list="0" val="0.0"/>
+                <prop id="15" list="0" val="0.0"/>
+                <prop id="17" list="0" val="10.0"/>
+                <prop id="18" list="0" val="0.0"/>
+                <prop id="19" list="0" val="0.0"/>
+                <prop id="23" list="0" val="false"/>
+            </s>
+            <s enabled="true" id="14">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="5.0"/>
+                <prop id="2" list="0" val="5.0"/>
+                <prop id="3" list="0" val="3.0"/>
+                <prop id="4" list="0" val="Healed"/>
+                <prop id="5" list="0" val="Damaged"/>
+                <prop id="7" list="0" val="Nothing"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0.5"/>
+                <prop id="10" list="0" val="true"/>
+                <prop id="11" list="0" val="false"/>
+                <prop id="12" list="0" val=""/>
+                <prop id="13" list="0" val=""/>
+                <prop id="14" list="0" val=""/>
+                <prop id="15" list="0" val=""/>
+                <prop id="16" list="0" val=""/>
+                <prop id="17" list="0" val="false"/>
+                <prop id="18" list="0" val="0.0"/>
+                <prop id="19" list="0" val="0.0"/>
+                <prop id="20" list="0" val=""/>
+                <prop id="22" list="0" val="0.0"/>
+                <prop id="23" list="0" val="false"/>
+                <prop id="24" list="0" val="-1"/>
+                <prop id="25" list="0" val="0.0"/>
+                <prop id="26" list="0" val="Actor"/>
+                <prop id="27" list="0" val="0.0"/>
+                <prop id="28" list="0" val="1.0"/>
+                <prop id="29" list="0" val="0.0"/>
+                <prop id="30" list="0" val="70.0"/>
+                <prop id="31" list="0" val="5.0"/>
+                <prop id="32" list="0" val="Horizontal"/>
+                <prop id="39" list="0" val="0,0,0,255"/>
+                <prop id="41" list="0" val="0,255,0,255"/>
+                <prop id="42" list="0" val="255,255,0,255"/>
+                <prop id="43" list="0" val="255,153,0,255"/>
+                <prop id="44" list="0" val="255,0,0,255"/>
+                <prop id="45" list="0" val="0,0,0,255"/>
+                <prop id="46" list="0" val="true"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="0"
+        defaultAnimation="0"
+        desc=""
+        id="46"
+        name="goblin_level2"
+        readable="false"
+        shared="false">
+        <anim
+            across="4"
+            down="3"
+            durations="100,100,100,100,100,100,100,100,100,100,100"
+            height="192"
+            id="0"
+            loop="true"
+            name="Animation 0"
+            numframes="11"
+            originx="32"
+            originy="32"
+            sync="false"
+            version="2"
+            width="256">
+            <poly
+                data="4,18,55,48,55,48,0,18,0"
+                density="0.1"
+                fric="0.2"
+                gid="3"
+                id="0"
+                name="Animation 0"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <actor
+        adamp="0.0"
+        ascale="true"
+        atlasID="0"
+        bodytype="2"
+        continuous="false"
+        desc=""
+        eventsnippetid="32"
+        fixedrot="true"
+        fric="0.2"
+        gid="3"
+        id="51"
+        ignoreg="true"
+        inertia="1.0"
+        ldamp="0.0"
+        mass="1.0"
+        name="goblin_level3a"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="52"
+        static="false">
+        <snippets>
+            <s enabled="true" id="5">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="1" val="">
+                    <text order="0" value="192,82"/>
+                    <text order="1" value="192,128"/>
+                    <text order="2" value="430,128"/>
+                    <text order="3" value="430,360"/>
+                    <text order="4" value="1330,360"/>
+                </prop>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="1" val=""/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="0.0"/>
+                <prop id="7" list="0" val="false"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0.0"/>
+                <prop id="10" list="0" val="0.0"/>
+                <prop id="12" list="0" val="0.0"/>
+                <prop id="13" list="0" val="0.0"/>
+                <prop id="14" list="0" val="0.0"/>
+                <prop id="15" list="0" val="0.0"/>
+                <prop id="17" list="0" val="10.0"/>
+                <prop id="18" list="0" val="0.0"/>
+                <prop id="19" list="0" val="0.0"/>
+                <prop id="23" list="0" val="false"/>
+            </s>
+            <s enabled="true" id="14">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="5.0"/>
+                <prop id="2" list="0" val="5.0"/>
+                <prop id="3" list="0" val="3.0"/>
+                <prop id="4" list="0" val="Healed"/>
+                <prop id="5" list="0" val="Damaged"/>
+                <prop id="7" list="0" val="Nothing"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0.5"/>
+                <prop id="10" list="0" val="true"/>
+                <prop id="11" list="0" val="false"/>
+                <prop id="12" list="0" val=""/>
+                <prop id="13" list="0" val=""/>
+                <prop id="14" list="0" val=""/>
+                <prop id="15" list="0" val=""/>
+                <prop id="16" list="0" val=""/>
+                <prop id="17" list="0" val="false"/>
+                <prop id="18" list="0" val="0.0"/>
+                <prop id="19" list="0" val="0.0"/>
+                <prop id="20" list="0" val=""/>
+                <prop id="22" list="0" val="0.0"/>
+                <prop id="23" list="0" val="false"/>
+                <prop id="24" list="0" val="-1"/>
+                <prop id="25" list="0" val="0.0"/>
+                <prop id="26" list="0" val="Actor"/>
+                <prop id="27" list="0" val="0.0"/>
+                <prop id="28" list="0" val="1.0"/>
+                <prop id="29" list="0" val="0.0"/>
+                <prop id="30" list="0" val="70.0"/>
+                <prop id="31" list="0" val="5.0"/>
+                <prop id="32" list="0" val="Horizontal"/>
+                <prop id="39" list="0" val="0,0,0,255"/>
+                <prop id="41" list="0" val="0,255,0,255"/>
+                <prop id="42" list="0" val="255,255,0,255"/>
+                <prop id="43" list="0" val="255,153,0,255"/>
+                <prop id="44" list="0" val="255,0,0,255"/>
+                <prop id="45" list="0" val="0,0,0,255"/>
+                <prop id="46" list="0" val="true"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="0"
+        defaultAnimation="0"
+        desc=""
+        id="52"
+        name="goblin_level3a"
+        readable="false"
+        shared="false">
+        <anim
+            across="4"
+            down="3"
+            durations="100,100,100,100,100,100,100,100,100,100,100"
+            height="192"
+            id="0"
+            loop="true"
+            name="Animation 0"
+            numframes="11"
+            originx="32"
+            originy="32"
+            sync="false"
+            version="2"
+            width="256">
+            <poly
+                data="4,18,55,48,55,48,0,18,0"
+                density="0.1"
+                fric="0.2"
+                gid="3"
+                id="0"
+                name="Animation 0"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <actor
+        adamp="0.0"
+        ascale="true"
+        atlasID="0"
+        bodytype="2"
+        continuous="false"
+        desc=""
+        eventsnippetid="33"
+        fixedrot="true"
+        fric="0.2"
+        gid="3"
+        id="53"
+        ignoreg="true"
+        inertia="1.0"
+        ldamp="0.0"
+        mass="1.0"
+        name="goblin_level3b"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="54"
+        static="false">
+        <snippets>
+            <s enabled="true" id="5">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="1" val="">
+                    <text order="0" value="432,640"/>
+                    <text order="1" value="430,360"/>
+                    <text order="2" value="1330,360"/>
+                </prop>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="1" val=""/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="0.0"/>
+                <prop id="7" list="0" val="false"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0.0"/>
+                <prop id="10" list="0" val="0.0"/>
+                <prop id="12" list="0" val="0.0"/>
+                <prop id="13" list="0" val="0.0"/>
+                <prop id="14" list="0" val="0.0"/>
+                <prop id="15" list="0" val="0.0"/>
+                <prop id="17" list="0" val="10.0"/>
+                <prop id="18" list="0" val="0.0"/>
+                <prop id="19" list="0" val="0.0"/>
+                <prop id="23" list="0" val="false"/>
+            </s>
+            <s enabled="true" id="14">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="5.0"/>
+                <prop id="2" list="0" val="5.0"/>
+                <prop id="3" list="0" val="3.0"/>
+                <prop id="4" list="0" val="Healed"/>
+                <prop id="5" list="0" val="Damaged"/>
+                <prop id="7" list="0" val="Nothing"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0.5"/>
+                <prop id="10" list="0" val="true"/>
+                <prop id="11" list="0" val="false"/>
+                <prop id="12" list="0" val=""/>
+                <prop id="13" list="0" val=""/>
+                <prop id="14" list="0" val=""/>
+                <prop id="15" list="0" val=""/>
+                <prop id="16" list="0" val=""/>
+                <prop id="17" list="0" val="false"/>
+                <prop id="18" list="0" val="0.0"/>
+                <prop id="19" list="0" val="0.0"/>
+                <prop id="20" list="0" val=""/>
+                <prop id="22" list="0" val="0.0"/>
+                <prop id="23" list="0" val="false"/>
+                <prop id="24" list="0" val="-1"/>
+                <prop id="25" list="0" val="0.0"/>
+                <prop id="26" list="0" val="Actor"/>
+                <prop id="27" list="0" val="0.0"/>
+                <prop id="28" list="0" val="1.0"/>
+                <prop id="29" list="0" val="0.0"/>
+                <prop id="30" list="0" val="70.0"/>
+                <prop id="31" list="0" val="5.0"/>
+                <prop id="32" list="0" val="Horizontal"/>
+                <prop id="39" list="0" val="0,0,0,255"/>
+                <prop id="41" list="0" val="0,255,0,255"/>
+                <prop id="42" list="0" val="255,255,0,255"/>
+                <prop id="43" list="0" val="255,153,0,255"/>
+                <prop id="44" list="0" val="255,0,0,255"/>
+                <prop id="45" list="0" val="0,0,0,255"/>
+                <prop id="46" list="0" val="true"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="0"
+        defaultAnimation="0"
+        desc=""
+        id="54"
+        name="goblin_level3b"
+        readable="false"
+        shared="false">
+        <anim
+            across="4"
+            down="3"
+            durations="100,100,100,100,100,100,100,100,100,100,100"
+            height="192"
+            id="0"
+            loop="true"
+            name="Animation 0"
+            numframes="11"
+            originx="32"
+            originy="32"
+            sync="false"
+            version="2"
+            width="256">
+            <poly
+                data="4,18,55,48,55,48,0,18,0"
+                density="0.1"
+                fric="0.2"
+                gid="3"
+                id="0"
+                name="Animation 0"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <actor
+        adamp="0.0"
+        ascale="true"
+        atlasID="0"
+        bodytype="0"
+        continuous="false"
+        desc=""
+        eventsnippetid="2"
+        fixedrot="true"
+        fric="0.2"
+        gid="5"
+        id="5"
+        ignoreg="true"
+        inertia="1.0"
+        ldamp="0.0"
+        mass="1.0"
+        name="guard_tower"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="6"
+        static="true">
+        <snippets/>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="1"
+        defaultAnimation="1"
+        desc=""
+        id="6"
+        name="guard_tower"
+        readable="false"
+        shared="false">
+        <anim
+            across="1"
+            down="1"
+            durations="100"
+            height="65"
+            id="1"
+            loop="true"
+            name="Animation 0"
+            numframes="1"
+            originx="16"
+            originy="32"
+            sync="false"
+            version="2"
+            width="32">
+            <poly
+                data="4,0,65,32,65,32,0,0,0"
+                density="0.1"
+                fric="0.2"
+                gid="-1000"
+                id="0"
+                name="Animation 1"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <custom-block
+        blocktag="custom-30"
+        blocktype="ACTION"
+        code=".say(&quot;Health Manager&quot;, &quot;_customBlock_Heal&quot;, []);"
+        desc="Adds a specific amount of health to the Actor."
+        global="false"
+        gui="Heal %0 By %1"
+        id="30"
+        message="Heal"
+        name="Heal"
+        oid="-1"
+        return="void"
+        shared="false"
+        snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="Amount" order="1" type="number"/>
+    </custom-block>
+    <actor
+        adamp="0.0"
+        ascale="true"
+        atlasID="0"
+        bodytype="2"
+        continuous="true"
+        desc=""
+        eventsnippetid="38"
+        fixedrot="false"
+        fric="0.2"
+        gid="2"
+        id="61"
+        ignoreg="false"
+        inertia="1.0"
+        ldamp="0.0"
+        mass="1.0"
+        name="help_actor"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="62"
+        static="false">
+        <snippets/>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="3"
+        defaultAnimation="3"
+        desc=""
+        id="62"
+        name="help_actor"
+        readable="false"
+        shared="false">
+        <anim
+            across="1"
+            down="1"
+            durations="100"
+            height="313"
+            id="3"
+            loop="true"
+            name="Animation 0"
+            numframes="1"
+            originx="160"
+            originy="156"
+            sync="false"
+            version="2"
+            width="321">
+            <poly
+                data="4,0,313,321,313,321,0,0,0"
+                density="0.1"
+                fric="0.2"
+                gid="-1000"
+                id="0"
+                name="Animation 3"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <custom-block
+        blocktag="custom-22"
+        blocktype="ACTION"
+        code="sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_IncrementScore&quot;, []);"
+        desc=""
+        global="false"
+        gui="Increment Score By %0"
+        id="22"
+        message="IncrementScore"
+        name="IncrementScore"
+        oid="-1"
+        return="void"
+        shared="false"
+        snippetID="9">
+        <blank name="Amount" order="0" type="number"/>
+    </custom-block>
+    <font
+        alphabet=" !&quot;#$%&amp;&apos;()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#127;&#128;&#129;&#130;&#131;&#132;&#134;&#135;&#136;&#137;&#138;&#139;&#140;&#141;&#142;&#143;&#144;&#145;&#146;&#147;&#148;&#149;&#150;&#151;&#152;&#153;&#154;&#155;&#156;&#157;&#158;&#159; ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ"
+        atlasID="0"
+        desc=""
+        height="126"
+        id="26"
+        name="Minecraftia"
+        offsets="0|0|0|,25|0|25,36|0|36,62|0|62,92|0|92,122|0|122,152|0|152,182|0|182,198|0|198,224|0|224,250|0|250,276|0|276,306|0|306,317|0|317,347|0|347,358|0|358,388|0|388,418|0|418,448|0|448,478|0|478,508|0|508,538|0|538,568|0|568,598|0|598,628|0|628,658|0|658,688|0|688,699|0|699,710|0|710,736|0|736,766|0|766,792|0|792,822|0|822,857|0|857,887|0|887,917|0|917,947|0|947,977|0|977,1007|0|1007,1037|0|1037,1067|0|1067,1097|0|1097,1118|0|1118,1148|0|1148,1178|0|1178,1208|0|1208,1238|0|1238,1268|0|1268,1298|0|1298,1328|0|1328,1358|0|1358,1388|0|1388,1418|0|1418,1448|0|1448,1478|0|1478,1508|0|1508,1538|0|1538,1568|0|1568,1598|0|1598,1628|0|1628,1649|0|1649,1679|0|1679,1700|0|1700,1730|0|1730,1760|0|1760,1776|0|1776,1806|0|1806,1836|0|1836,1866|0|1866,1896|0|1896,1926|0|1926,1952|0|1952,1982|0|1982,2012|0|2012,2023|0|2023,2053|0|2053,2079|0|2079,2095|0|2095,2125|0|2125,2155|0|2155,2185|0|2185,2215|0|2215,2245|0|2245,2275|0|2275,2305|0|2305,2326|0|2326,2356|0|2356,2386|0|2386,2416|0|2416,2446|0|2446,2476|0|2476,2506|0|2506,2532|0|2532,2543|0|2543,2569|0|2569,2604|0|2604,2605|0|2605,2606|0|2606,2607|0|2607,2608|0|2608,2609|0|2609,2610|0|2610,2611|0|2611,2612|0|2612,2613|0|2613,2614|0|2614,2615|0|2615,2616|0|2616,2617|0|2617,2618|0|2618,2619|0|2619,2620|0|2620,2621|0|2621,2622|0|2622,2623|0|2623,2624|0|2624,2625|0|2625,2626|0|2626,2627|0|2627,2628|0|2628,2629|0|2629,2630|0|2630,2631|0|2631,2632|0|2632,2633|0|2633,2634|0|2634,2635|0|2635,2636|0|2636,2637|0|2637,2638|0|2638,2649|0|2649,2679|0|2679,2709|0|2709,2735|0|2735,2765|0|2765,2776|0|2776,2802|0|2802,2832|0|2832,2867|0|2867,2888|0|2888,2918|0|2918,2948|0|2948,2978|0|2978,0|63|3013,30|63|3043,51|63|3064,86|63|3099,112|63|3125,138|63|3151,154|63|3167,194|63|3207,239|63|3252,255|63|3268,276|63|3289,292|63|3305,313|63|3326,343|63|3356,373|63|3386,403|63|3416,433|63|3446,463|63|3476,493|63|3506,523|63|3536,553|63|3566,583|63|3596,613|63|3626,643|63|3656,673|63|3686,703|63|3716,733|63|3746,763|63|3776,793|63|3806,823|63|3836,839|63|3852,856|63|3869,877|63|3890,898|63|3911,933|63|3946,963|63|3976,993|63|4006,1023|63|4036,1053|63|4066,1083|63|4096,1113|63|4126,1143|63|4156,1173|63|4186,1203|63|4216,1233|63|4246,1263|63|4276,1293|63|4306,1323|63|4336,1349|63|4362,1379|63|4392,1409|63|4422,1439|63|4452,1469|63|4482,1499|63|4512,1529|63|4542,1559|63|4572,1589|63|4602,1619|63|4632,1649|63|4662,1679|63|4692,1709|63|4722,1739|63|4752,1755|63|4768,1771|63|4784,1782|63|4795,1803|63|4816,1833|63|4846,1863|63|4876,1893|63|4906,1923|63|4936,1953|63|4966,1983|63|4996,2013|63|5026,2048|63|5061,2078|63|5091,2108|63|5121,2138|63|5151,2168|63|5181,2198|63|5211,2228|63|5241,2249|63|5262,2279|63|5292,2280|63|5293,2281|63|5294,2282|63|5295,2283|63|5296,2284|63|5297,2285|63|5298,2286|63|5299,2287|63|5300,2288|63|5301,2289|63|5302,2290|63|5303,2291|63|5304,2292|63|5305,2293|63|5306,2294|63|5307,2295|63|5308,2296|63|5309,2297|63|5310,2298|63|5311,2299|63|5312,2300|63|5313,2301|63|5314,2302|63|5315,2303|63|5316,2304|63|5317,2305|63|5318,2306|63|5319,2307|63|5320,2308|63|5321,2309|63|5322,2310|63|5323,2311|63|5324,2312|63|5325,2313|63|5326,2314|63|5327,2315|63|5328,2316|63|5329,2317|63|5330,2318|63|5331,2319|63|5332,2320|63|5333,2321|63|5334,2322|63|5335,2323|63|5336,2324|63|5337,2325|63|5338,2326|63|5339,2327|63|5340,2328|63|5341,2329|63|5342,2330|63|5343,2331|63|5344,2332|63|5345,2333|63|5346,2334|63|5347,2335|63|5348,2336|63|5349,2337|63|5350,2338|63|5351,2339|63|5352,2340|63|5353,2341|63|5354,2342|63|5355,2343|63|5356,2344|63|5357,2345|63|5358,2346|63|5359,2347|63|5360,2348|63|5361,2349|63|5362,2350|63|5363,2351|63|5364,2352|63|5365,2353|63|5366,2354|63|5367,2355|63|5368,2356|63|5369,2357|63|5370,2358|63|5371,2359|63|5372,2360|63|5373,2361|63|5374,2362|63|5375,2363|63|5376,2364|63|5377,2365|63|5378,2366|63|5379,2367|63|5380,2368|63|5381,2369|63|5382,2370|63|5383,2371|63|5384,2372|63|5385,2373|63|5386,2374|63|5387,2375|63|5388,2376|63|5389,2377|63|5390,2378|63|5391,2379|63|5392,2380|63|5393,2381|63|5394,2382|63|5395,2383|63|5396,2384|63|5397,2385|63|5398,2386|63|5399,2387|63|5400,2388|63|5401,2389|63|5402,2390|63|5403,2391|63|5404,2392|63|5405,2393|63|5406,2394|63|5407,2395|63|5408,2396|63|5409,2397|63|5410,2398|63|5411,2399|63|5412"
+        oid="98459"
+        prerendered="false"
+        readable="false"
+        rowHeight="63"
+        shared="true"/>
+    <font
+        alphabet=" !&quot;#$%&amp;&apos;()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#127;&#128;&#129;&#130;&#131;&#132;&#134;&#135;&#136;&#137;&#138;&#139;&#140;&#141;&#142;&#143;&#144;&#145;&#146;&#147;&#148;&#149;&#150;&#151;&#152;&#153;&#154;&#155;&#156;&#157;&#158;&#159; ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ"
+        atlasID="0"
+        desc=""
+        height="231"
+        id="42"
+        name="Minecraftia Large"
+        offsets="0|0|0|,32|0|32,44|0|44,74|0|74,110|0|110,146|0|146,182|0|182,218|0|218,236|0|236,266|0|266,296|0|296,326|0|326,362|0|362,374|0|374,410|0|410,422|0|422,458|0|458,494|0|494,530|0|530,566|0|566,602|0|602,638|0|638,674|0|674,710|0|710,746|0|746,782|0|782,818|0|818,830|0|830,842|0|842,872|0|872,908|0|908,938|0|938,974|0|974,1016|0|1016,1052|0|1052,1088|0|1088,1124|0|1124,1160|0|1160,1196|0|1196,1232|0|1232,1268|0|1268,1304|0|1304,1328|0|1328,1364|0|1364,1400|0|1400,1436|0|1436,1472|0|1472,1508|0|1508,1544|0|1544,1580|0|1580,1616|0|1616,1652|0|1652,1688|0|1688,1724|0|1724,1760|0|1760,1796|0|1796,1832|0|1832,1868|0|1868,1904|0|1904,1940|0|1940,1964|0|1964,2000|0|2000,2024|0|2024,2060|0|2060,2096|0|2096,2114|0|2114,2150|0|2150,2186|0|2186,2222|0|2222,2258|0|2258,2294|0|2294,2324|0|2324,2360|0|2360,2396|0|2396,2408|0|2408,2444|0|2444,2474|0|2474,2492|0|2492,2528|0|2528,2564|0|2564,2600|0|2600,2636|0|2636,2672|0|2672,2708|0|2708,2744|0|2744,2768|0|2768,2804|0|2804,2840|0|2840,2876|0|2876,2912|0|2912,0|77|2948,36|77|2984,66|77|3014,78|77|3026,108|77|3056,150|77|3098,151|77|3099,152|77|3100,153|77|3101,154|77|3102,155|77|3103,156|77|3104,157|77|3105,158|77|3106,159|77|3107,160|77|3108,161|77|3109,162|77|3110,163|77|3111,164|77|3112,165|77|3113,166|77|3114,167|77|3115,168|77|3116,169|77|3117,170|77|3118,171|77|3119,172|77|3120,173|77|3121,174|77|3122,175|77|3123,176|77|3124,177|77|3125,178|77|3126,179|77|3127,180|77|3128,181|77|3129,182|77|3130,183|77|3131,184|77|3132,196|77|3144,232|77|3180,268|77|3216,298|77|3246,334|77|3282,346|77|3294,376|77|3324,412|77|3360,454|77|3402,478|77|3426,514|77|3462,550|77|3498,586|77|3534,628|77|3576,664|77|3612,688|77|3636,730|77|3678,760|77|3708,790|77|3738,808|77|3756,856|77|3804,910|77|3858,928|77|3876,952|77|3900,970|77|3918,994|77|3942,1030|77|3978,1066|77|4014,1102|77|4050,1138|77|4086,1174|77|4122,1210|77|4158,1246|77|4194,1282|77|4230,1318|77|4266,1354|77|4302,1390|77|4338,1426|77|4374,1462|77|4410,1498|77|4446,1534|77|4482,1570|77|4518,1606|77|4554,1624|77|4572,1642|77|4590,1666|77|4614,1690|77|4638,1732|77|4680,1768|77|4716,1804|77|4752,1840|77|4788,1876|77|4824,1912|77|4860,1948|77|4896,1984|77|4932,2020|77|4968,2056|77|5004,2092|77|5040,2128|77|5076,2164|77|5112,2200|77|5148,2230|77|5178,2266|77|5214,2302|77|5250,2338|77|5286,2374|77|5322,2410|77|5358,2446|77|5394,2482|77|5430,2518|77|5466,2554|77|5502,2590|77|5538,2626|77|5574,2662|77|5610,2698|77|5646,2716|77|5664,2734|77|5682,2746|77|5694,2770|77|5718,2806|77|5754,2842|77|5790,2878|77|5826,2914|77|5862,2950|77|5898,0|154|5934,36|154|5970,78|154|6012,114|154|6048,150|154|6084,186|154|6120,222|154|6156,258|154|6192,294|154|6228,318|154|6252,354|154|6288,355|154|6289,356|154|6290,357|154|6291,358|154|6292,359|154|6293,360|154|6294,361|154|6295,362|154|6296,363|154|6297,364|154|6298,365|154|6299,366|154|6300,367|154|6301,368|154|6302,369|154|6303,370|154|6304,371|154|6305,372|154|6306,373|154|6307,374|154|6308,375|154|6309,376|154|6310,377|154|6311,378|154|6312,379|154|6313,380|154|6314,381|154|6315,382|154|6316,383|154|6317,384|154|6318,385|154|6319,386|154|6320,387|154|6321,388|154|6322,389|154|6323,390|154|6324,391|154|6325,392|154|6326,393|154|6327,394|154|6328,395|154|6329,396|154|6330,397|154|6331,398|154|6332,399|154|6333,400|154|6334,401|154|6335,402|154|6336,403|154|6337,404|154|6338,405|154|6339,406|154|6340,407|154|6341,408|154|6342,409|154|6343,410|154|6344,411|154|6345,412|154|6346,413|154|6347,414|154|6348,415|154|6349,416|154|6350,417|154|6351,418|154|6352,419|154|6353,420|154|6354,421|154|6355,422|154|6356,423|154|6357,424|154|6358,425|154|6359,426|154|6360,427|154|6361,428|154|6362,429|154|6363,430|154|6364,431|154|6365,432|154|6366,433|154|6367,434|154|6368,435|154|6369,436|154|6370,437|154|6371,438|154|6372,439|154|6373,440|154|6374,441|154|6375,442|154|6376,443|154|6377,444|154|6378,445|154|6379,446|154|6380,447|154|6381,448|154|6382,449|154|6383,450|154|6384,451|154|6385,452|154|6386,453|154|6387,454|154|6388,455|154|6389,456|154|6390,457|154|6391,458|154|6392,459|154|6393,460|154|6394,461|154|6395,462|154|6396,463|154|6397,464|154|6398,465|154|6399,466|154|6400,467|154|6401,468|154|6402,469|154|6403,470|154|6404,471|154|6405,472|154|6406,473|154|6407,474|154|6408"
+        oid="98459"
+        prerendered="false"
+        readable="false"
+        rowHeight="77"
+        shared="true"/>
+    <font
+        alphabet=" !&quot;#$%&amp;&apos;()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~&#127;&#128;&#129;&#130;&#131;&#132;&#134;&#135;&#136;&#137;&#138;&#139;&#140;&#141;&#142;&#143;&#144;&#145;&#146;&#147;&#148;&#149;&#150;&#151;&#152;&#153;&#154;&#155;&#156;&#157;&#158;&#159; ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ"
+        atlasID="0"
+        desc=""
+        height="42"
+        id="41"
+        name="score"
+        offsets="0|0|0|,12|0|12,17|0|17,25|0|25,35|0|35,45|0|45,55|0|55,64|0|64,68|0|68,74|0|74,80|0|80,90|0|90,102|0|102,108|0|108,118|0|118,122|0|122,132|0|132,142|0|142,152|0|152,163|0|163,173|0|173,183|0|183,193|0|193,203|0|203,213|0|213,223|0|223,233|0|233,237|0|237,243|0|243,256|0|256,268|0|268,280|0|280,290|0|290,299|0|299,313|0|313,325|0|325,337|0|337,348|0|348,359|0|359,371|0|371,383|0|383,395|0|395,405|0|405,418|0|418,430|0|430,442|0|442,456|0|456,469|0|469,481|0|481,492|0|492,504|0|504,517|0|517,527|0|527,539|0|539,551|0|551,565|0|565,578|0|578,590|0|590,602|0|602,612|0|612,618|0|618,628|0|628,634|0|634,644|0|644,658|0|658,664|0|664,676|0|676,689|0|689,700|0|700,713|0|713,724|0|724,735|0|735,747|0|747,759|0|759,769|0|769,778|0|778,790|0|790,800|0|800,814|0|814,826|0|826,838|0|838,851|0|851,864|0|864,876|0|876,886|0|886,897|0|897,909|0|909,921|0|921,934|0|934,946|0|946,958|0|958,968|0|968,974|0|974,978|0|978,985|0|985,995|0|995,1005|0|1005,1006|0|1006,1007|0|1007,1008|0|1008,1009|0|1009,1010|0|1010,1011|0|1011,1012|0|1012,1013|0|1013,1014|0|1014,1015|0|1015,1016|0|1016,1017|0|1017,1018|0|1018,1019|0|1019,1020|0|1020,1021|0|1021,1022|0|1022,1023|0|1023,1024|0|1024,1025|0|1025,1026|0|1026,1027|0|1027,1028|0|1028,1029|0|1029,1030|0|1030,1031|0|1031,1032|0|1032,1033|0|1033,1034|0|1034,1035|0|1035,1036|0|1036,1037|0|1037,1049|0|1049,1054|0|1054,1063|0|1063,1074|0|1074,1084|0|1084,1096|0|1096,1100|0|1100,1111|0|1111,1119|0|1119,1132|0|1132,1140|0|1140,1151|0|1151,1164|0|1164,1174|0|1174,1187|0|1187,1201|0|1201,1209|0|1209,1221|0|1221,1228|0|1228,1235|0|1235,1241|0|1241,1253|0|1253,1263|0|1263,1267|0|1267,1273|0|1273,1279|0|1279,1287|0|1287,1299|0|1299,1311|0|1311,1325|0|1325,1337|0|1337,1346|0|1346,1360|0|1360,1374|0|1374,1388|0|1388,1402|0|1402,1416|0|1416,1430|0|1430,1444|0|1444,1456|0|1456,1467|0|1467,1478|0|1478,1489|0|1489,1500|0|1500,1510|0|1510,1520|0|1520,1530|0|1530,1540|0|1540,1552|0|1552,1565|0|1565,1577|0|1577,1589|0|1589,1601|0|1601,1613|0|1613,1625|0|1625,1634|0|1634,1646|0|1646,1658|0|1658,1670|0|1670,1682|0|1682,1694|0|1694,1706|0|1706,1717|0|1717,1728|0|1728,1740|0|1740,1752|0|1752,1764|0|1764,1776|0|1776,1788|0|1788,1800|0|1800,1814|0|1814,1825|0|1825,1836|0|1836,1847|0|1847,1858|0|1858,1869|0|1869,1879|0|1879,1889|0|1889,1899|0|1899,1909|0|1909,1920|0|1920,1932|0|1932,1944|0|1944,1956|0|1956,1968|0|1968,1980|0|1980,1992|0|1992,2004|0|2004,2016|0|2016,2028|0|2028,2040|0|2040,2052|0|2052,2064|0|2064,2076|0|2076,2089|0|2089,2101|0|2101,2115|0|2115,2127|0|2127,2141|0|2141,2153|0|2153,2167|0|2167,2180|0|2180,2192|0|2192,2203|0|2203,2215|0|2215,2226|0|2226,2238|0|2238,2249|0|2249,2261|0|2261,2272|0|2272,2283|0|2283,2297|0|2297,2309|0|2309,2322|0|2322,2333|0|2333,2344|0|2344,2355|0|2355,2366|0|2366,2377|0|2377,2388|0|2388,2400|0|2400,2411|0|2411,2422|0|2422,2433|0|2433,2445|0|2445,2457|0|2457,2469|0|2469,2481|0|2481,2493|0|2493,2505|0|2505,2517|0|2517,2529|0|2529,2541|0|2541,2553|0|2553,2565|0|2565,2577|0|2577,2587|0|2587,2597|0|2597,2607|0|2607,2617|0|2617,2627|0|2627,2637|0|2637,2647|0|2647,2657|0|2657,2667|0|2667,2677|0|2677,2689|0|2689,2702|0|2702,2715|0|2715,2724|0|2724,2736|0|2736,2748|0|2748,2760|0|2760,2772|0|2772,2782|0|2782,2794|0|2794,2804|0|2804,2816|0|2816,2826|0|2826,2838|0|2838,2848|0|2848,2860|0|2860,2870|0|2870,2883|0|2883,2895|0|2895,2908|0|2908,2920|0|2920,2933|0|2933,2945|0|2945,2958|0|2958,2969|0|2969,2980|0|2980,2992|0|2992,3004|0|3004,3016|0|3016,3028|0|3028,3040|0|3040,3052|0|3052,3066|0|3066,3080|0|3080,3093|0|3093,3105|0|3105,3118|0|3118,3130|0|3130,3143|0|3143,3155|0|3155,3165|0|3165,3175|0|3175,3185|0|3185,0|21|3195,10|21|3205,20|21|3215,30|21|3225,40|21|3235,52|21|3247,63|21|3258,75|21|3270,87|21|3282,99|21|3294,110|21|3305,122|21|3317,134|21|3329,146|21|3341,158|21|3353,170|21|3365,182|21|3377,194|21|3389,206|21|3401,218|21|3413,230|21|3425,242|21|3437,254|21|3449,267|21|3462,280|21|3475,292|21|3487,304|21|3499,316|21|3511,326|21|3521,336|21|3531,346|21|3541,356|21|3551,366|21|3561,376|21|3571"
+        oid="-1"
+        prerendered="false"
+        readable="false"
+        rowHeight="21"
+        shared="false"/>
+    <sprite
+        atlasID="0"
+        default="0"
+        defaultAnimation="0"
+        desc=""
+        id="36"
+        name="sdfasdasd"
+        readable="false"
+        shared="false">
+        <anim
+            across="16"
+            down="1"
+            durations="80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80"
+            height="24"
+            id="0"
+            loop="true"
+            name="Animation 0"
+            numframes="16"
+            originx="12"
+            originy="12"
+            sync="true"
+            version="1"
+            width="384">
+            <poly
+                data="4,0,24,24,24,24,0,0,0"
+                density="0.1"
+                fric="0.2"
+                gid="-1000"
+                id="0"
+                name="Animation 0"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <custom-block
+        blocktag="custom-19"
+        blocktype="ACTION"
+        code="sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_SetDrawOffset&quot;, [, ]);"
+        desc=""
+        global="false"
+        gui="Set Score Drawing Offset to X %0 Y %1"
+        id="19"
+        message="SetDrawOffset"
+        name="SetDrawOffset"
+        oid="-1"
+        return="void"
+        shared="false"
+        snippetID="9">
+        <blank name="Horizontal" order="0" type="number"/>
+        <blank name="Vertical" order="1" type="number"/>
+    </custom-block>
+    <custom-block
+        blocktag="custom-28"
+        blocktype="ACTION"
+        code=".say(&quot;Health Manager&quot;, &quot;_customBlock_SetHealth&quot;, []);"
+        desc=""
+        global="false"
+        gui="Set Health For %0 To %1"
+        id="28"
+        message="SetHealth"
+        name="SetHealth"
+        oid="-1"
+        return="void"
+        shared="false"
+        snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="Amount" order="1" type="number"/>
+    </custom-block>
+    <custom-block
+        blocktag="custom-27"
+        blocktype="ACTION"
+        code=".say(&quot;Health Manager&quot;, &quot;_customBlock_SetInvincibility&quot;, []);"
+        desc=""
+        global="false"
+        gui="Set Invincibility For %0 to %1"
+        id="27"
+        message="SetInvincibility"
+        name="SetInvincibility"
+        oid="-1"
+        return="void"
+        shared="false"
+        snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="Status" order="1" type="boolean"/>
+    </custom-block>
+    <custom-block
+        blocktag="custom-18"
+        blocktype="ACTION"
+        code="sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_SetScore&quot;, []);"
+        desc=""
+        global="false"
+        gui="Set Current Score To %0"
+        id="18"
+        message="SetScore"
+        name="SetScore"
+        oid="-1"
+        return="void"
+        shared="false"
+        snippetID="9">
+        <blank name="Score" order="0" type="number"/>
+    </custom-block>
+    <custom-block
+        blocktag="custom-24"
+        blocktype="ACTION"
+        code="sayToScene(&quot;Score Manager&quot;, &quot;_customBlock_SetScoreFont&quot;, []);"
+        desc=""
+        global="false"
+        gui="Set Score Font To %0"
+        id="24"
+        message="SetScoreFont"
+        name="SetScoreFont"
+        oid="-1"
+        return="void"
+        shared="false"
+        snippetID="9">
+        <blank name="Font" order="0" type="font"/>
+    </custom-block>
+    <actor
+        adamp="0.0"
+        ascale="true"
+        atlasID="0"
+        bodytype="2"
+        continuous="false"
+        desc="It&apos;s a coin.  It spins."
+        eventsnippetid="15"
+        fixedrot="true"
+        fric="0.2"
+        gid="2"
+        id="35"
+        ignoreg="false"
+        inertia="1.0"
+        ldamp="0.0"
+        mass="1.0"
+        name="Spinning Coin"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="36"
+        static="false">
+        <snippets/>
+    </actor>
+    <actor
+        adamp="0.0"
+        ascale="true"
+        atlasID="0"
+        bodytype="2"
+        continuous="false"
+        desc=""
+        eventsnippetid="34"
+        fixedrot="false"
+        fric="0.2"
+        gid="2"
+        id="55"
+        ignoreg="false"
+        inertia="1.0"
+        ldamp="0.0"
+        mass="1.0"
+        name="Stencyl Book Menu Button"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="56"
+        static="false">
+        <snippets/>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="0"
+        defaultAnimation="0"
+        desc=""
+        id="56"
+        name="Stencyl Book Menu Button"
+        readable="false"
+        shared="false">
+        <anim
+            across="1"
+            down="1"
+            durations="100"
+            height="40"
+            id="0"
+            loop="true"
+            name="Menu"
+            numframes="1"
+            originx="50"
+            originy="20"
+            sync="false"
+            version="2"
+            width="100">
+            <poly
+                data="4,0,40,100,40,100,0,0,0"
+                density="0.1"
+                fric="0.2"
+                gid="-1000"
+                id="0"
+                name="Animation 0"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <tileset
+        across="6"
+        atlasID="0"
+        desc=""
+        down="17"
+        id="0"
+        name="Stencyl Book Tileset"
+        oid="-1"
+        readable="false"
+        shared="false"
+        th="32"
+        tw="32">
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="0"
+            id="0"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="1"
+            id="1"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="2"
+            id="2"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="3"
+            id="3"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="4"
+            id="4"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="5"
+            id="5"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="6"
+            id="6"
+            order="-1"/>
+        <tile
+            collision="-1"
+            data=""
+            durations="100"
+            frames="7"
+            id="7"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="8"
+            id="8"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="9"
+            id="9"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="10"
+            id="10"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="11"
+            id="11"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="12"
+            id="12"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="13"
+            id="13"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="14"
+            id="14"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="15"
+            id="15"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="16"
+            id="16"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="17"
+            id="17"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="18"
+            id="18"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="19"
+            id="19"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="20"
+            id="20"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="21"
+            id="21"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="22"
+            id="22"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="23"
+            id="23"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="24"
+            id="24"
+            order="-1"/>
+        <tile
+            collision="3"
+            data=""
+            durations="100"
+            frames="25"
+            id="25"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="26"
+            id="26"
+            order="-1"/>
+        <tile
+            collision="2"
+            data=""
+            durations="100"
+            frames="27"
+            id="27"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="28"
+            id="28"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="29"
+            id="29"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="30"
+            id="30"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="31"
+            id="31"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="32"
+            id="32"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="33"
+            id="33"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="34"
+            id="34"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="35"
+            id="35"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="36"
+            id="36"
+            order="-1"/>
+        <tile
+            collision="3"
+            data=""
+            durations="100"
+            frames="37"
+            id="37"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="38"
+            id="38"
+            order="-1"/>
+        <tile
+            collision="2"
+            data=""
+            durations="100"
+            frames="39"
+            id="39"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="40"
+            id="40"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="41"
+            id="41"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="42"
+            id="42"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="43"
+            id="43"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="44"
+            id="44"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="45"
+            id="45"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="46"
+            id="46"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="47"
+            id="47"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="48"
+            id="48"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="49"
+            id="49"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="50"
+            id="50"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="51"
+            id="51"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="52"
+            id="52"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="53"
+            id="53"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="54"
+            id="54"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="55"
+            id="55"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="56"
+            id="56"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="57"
+            id="57"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="58"
+            id="58"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="59"
+            id="59"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="60"
+            id="60"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="61"
+            id="61"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="62"
+            id="62"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="63"
+            id="63"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="64"
+            id="64"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="65"
+            id="65"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="66"
+            id="66"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="67"
+            id="67"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="68"
+            id="68"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="69"
+            id="69"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="70"
+            id="70"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="71"
+            id="71"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="72"
+            id="72"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="73"
+            id="73"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="74"
+            id="74"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="75"
+            id="75"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="76"
+            id="76"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="77"
+            id="77"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="78"
+            id="78"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="79"
+            id="79"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="80"
+            id="80"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="81"
+            id="81"
+            order="-1"/>
+        <tile
+            collision="-1"
+            data=""
+            durations="100"
+            frames="82"
+            id="82"
+            order="-1"/>
+        <tile
+            collision="-1"
+            data=""
+            durations="100"
+            frames="83"
+            id="83"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="84"
+            id="84"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="85"
+            id="85"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="86"
+            id="86"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="87"
+            id="87"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="88"
+            id="88"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="89"
+            id="89"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="90"
+            id="90"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="91"
+            id="91"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="92"
+            id="92"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="93"
+            id="93"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="94"
+            id="94"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="95"
+            id="95"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="96"
+            id="96"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="97"
+            id="97"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="98"
+            id="98"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="99"
+            id="99"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="100"
+            id="100"
+            order="-1"/>
+        <tile
+            collision="1"
+            data=""
+            durations="100"
+            frames="101"
+            id="101"
+            order="-1"/>
+    </tileset>
+    <actor
+        adamp="0.0"
+        ascale="true"
+        atlasID="0"
+        bodytype="2"
+        continuous="false"
+        desc=""
+        eventsnippetid="35"
+        fixedrot="false"
+        fric="0.2"
+        gid="2"
+        id="57"
+        ignoreg="false"
+        inertia="1.0"
+        ldamp="0.0"
+        mass="1.0"
+        name="trophy"
+        oid="-1"
+        pausable="true"
+        physicsMode="0"
+        rest="0.0"
+        shared="false"
+        sprite="58"
+        static="false">
+        <snippets/>
+    </actor>
+    <sprite
+        atlasID="0"
+        default="1"
+        defaultAnimation="1"
+        desc=""
+        id="58"
+        name="trophy"
+        readable="false"
+        shared="false">
+        <anim
+            across="1"
+            down="1"
+            durations="100"
+            height="232"
+            id="1"
+            loop="true"
+            name="Animation 0"
+            numframes="1"
+            originx="128"
+            originy="116"
+            sync="false"
+            version="2"
+            width="256">
+            <poly
+                data="4,0,232,256,232,256,0,0,0"
+                density="0.1"
+                fric="0.2"
+                gid="-1000"
+                id="0"
+                name="Animation 1"
+                rest="0.0"
+                sensor="false"/>
+        </anim>
+    </sprite>
+    <background
+        atlasID="0"
+        desc=""
+        durations="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100"
+        dx="-0.0"
+        dy="-0.0"
+        height="128"
+        id="9"
+        name="water"
+        numframes="40"
+        oid="-1"
+        readable="false"
+        repeats="true"
+        resized="false"
+        shared="false"
+        width="128"
+        xpf="1.0"
+        ypf="1.0"/>
+</pack>
