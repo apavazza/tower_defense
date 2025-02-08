@@ -11,7 +11,6 @@
 - Enemy Bullet: rob1221, Public Domain, from StencylForge
 - Stencyl Book Tileset: Innes Borkwood, Public Domain, from StencylForge
 - Stencyl Book Menu button: Innes Borkwood, CC-BY 3.0, from StencylForge
-- Copy of Explosion: DigitalArtsCamp, CC-BY 3.0, from StencylForge
 - Golden Trophy Game Ornament: bevouliin.com, CC-BY 3.0, https://opengameart.org/content/golden-trophy-game-ornament
 
 ### Fonts:
