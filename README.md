@@ -1,6 +1,6 @@
 # Tower Defense
 
- [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
 
 A tower defense game made in [Stencyl](https://stencyl.com/).
 
